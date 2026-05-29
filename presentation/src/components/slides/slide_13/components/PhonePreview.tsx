@@ -11,6 +11,7 @@ interface PhonePreviewProps {
 const LOGICAL_WIDTH = 390;
 
 const EMBED_STYLE_ID = "phone-app-embed-style";
+const PHONE_APP_URL = `${import.meta.env.BASE_URL}phone-app/`;
 const EMBED_STYLE = `
   html, body {
     scrollbar-width: none;
@@ -101,7 +102,7 @@ export function PhonePreview({ visible }: PhonePreviewProps) {
             <iframe
               ref={iframeRef}
               onLoad={handleIframeLoad}
-              src="/phone-app/"
+              src={PHONE_APP_URL}
               title="Special Olympics Belgium donation application preview"
               style={{
                 border: 0,
