@@ -1,0 +1,132 @@
+.app-shell {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background: var(--sob-bg);
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgb(255 248 249 / 92%);
+  backdrop-filter: blur(12px);
+  border-bottom: 2px solid var(--sob-red);
+  box-shadow: 0 4px 24px rgb(168 16 40 / 8%);
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  min-height: 5.2rem;
+  padding: 1rem 1rem 0.8rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.brand-logo {
+  flex-shrink: 0;
+  width: min(44vw, 9.8rem);
+  height: 3rem;
+  object-fit: contain;
+  object-position: left center;
+  animation: scale-in 0.5s var(--ease-out-expo) both;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-shrink: 0;
+  --header-control-height: 2.55rem;
+}
+
+.lang-switch {
+  display: flex;
+  align-items: stretch;
+  height: var(--header-control-height);
+  border: 1.5px solid var(--sob-border);
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--sob-white);
+}
+
+.lang-btn {
+  min-width: 2.35rem;
+  padding: 0 0.6rem;
+  height: 100%;
+  border: none;
+  background: transparent;
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--sob-muted);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.lang-btn:hover:not(.active) {
+  background: var(--sob-red-soft);
+  color: var(--sob-red);
+}
+
+.lang-btn.active {
+  background: var(--sob-red);
+  color: var(--sob-white);
+}
+
+.main-nav {
+  display: flex;
+  gap: 0.35rem;
+  padding: 0 0.75rem 0.65rem;
+  overflow-x: auto;
+}
+
+.nav-link {
+  flex: 1;
+  text-align: center;
+  padding: 0.55rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--sob-muted);
+  text-decoration: none;
+  white-space: nowrap;
+  border: 1.5px solid transparent;
+  transition:
+    background 0.15s,
+    color 0.15s,
+    border-color 0.15s,
+    transform 0.2s var(--ease-spring);
+}
+
+.nav-link:hover:not(.active) {
+  background: var(--sob-red-soft);
+  color: var(--sob-red);
+  border-color: var(--sob-border);
+}
+
+.nav-link.active {
+  background: var(--sob-red);
+  color: var(--sob-white);
+  box-shadow: 0 3px 12px var(--sob-red-glow);
+}
+
+.site-main {
+  flex: 1;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.75rem 1rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .site-main {
+    padding: 1.75rem 1.5rem 3rem;
+  }
+}

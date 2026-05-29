@@ -1,0 +1,229 @@
+.support-sphere-page {
+  height: calc(100dvh - 6.6rem);
+  max-height: calc(100dvh - 6.6rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+  gap: 0.7rem;
+  padding-top: clamp(0.28rem, 1.4vh, 0.65rem);
+}
+
+.goal-line-wrap {
+  display: grid;
+  gap: 0.55rem;
+  padding: 0.68rem 0.75rem 0.8rem;
+  border: 1px solid rgb(227 24 55 / 22%);
+  border-radius: var(--radius-md);
+  background: linear-gradient(180deg, rgb(255 255 255 / 92%), rgb(252 243 246 / 92%));
+  width: min(44rem, 100%);
+  margin-inline: auto;
+}
+
+.goal-line-header {
+  display: grid;
+  justify-items: center;
+  gap: 0.2rem;
+}
+
+.goal-line-title {
+  margin: 0;
+  font-size: 0.72rem;
+  color: var(--sob-muted);
+}
+
+.goal-line-total {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--sob-red-dark);
+}
+
+.goal-line-track {
+  position: relative;
+  height: 0.62rem;
+  border-radius: 999px;
+  background: rgb(227 24 55 / 14%);
+  overflow: visible;
+}
+
+.goal-line-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #ff7b93 0%, #e31e37 70%, #c8112e 100%);
+}
+
+.goal-line-marker {
+  position: absolute;
+  top: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 999px;
+  transform: translateX(-50%);
+  border: 2px solid rgb(117 117 117 / 38%);
+  background: #fff;
+}
+
+.goal-line-marker.is-on {
+  border-color: #e31e37;
+  background: #e31e37;
+  box-shadow: 0 0 0.45rem rgb(227 30 55 / 55%);
+}
+
+.goal-line-checkpoint-row {
+  position: relative;
+  height: 2rem;
+  margin-top: 0.18rem;
+}
+
+.goal-line-checkpoint-chip {
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3rem;
+  padding: 0.24rem 0.52rem;
+  border-radius: 999px;
+  border: 1px solid rgb(117 117 117 / 32%);
+  background: rgb(255 255 255 / 88%);
+  color: var(--sob-muted);
+  font-size: 0.66rem;
+  font-weight: 800;
+}
+
+.goal-line-checkpoint-chip.is-end {
+  transform: translateX(-100%);
+}
+
+.goal-line-checkpoint-chip.is-on {
+  border-color: rgb(227 24 55 / 42%);
+  background: linear-gradient(180deg, #e31e37, #c6102d);
+  color: #fff;
+  box-shadow: 0 0.2rem 0.45rem rgb(227 24 55 / 28%);
+}
+
+.goal-line-percent {
+  margin: 0.1rem 0 0;
+  text-align: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--sob-red-dark);
+}
+
+@media (max-width: 430px) {
+  .support-sphere-page {
+    gap: 0.58rem;
+    height: calc(100dvh - 6.2rem);
+    max-height: calc(100dvh - 6.2rem);
+    padding-top: 0.25rem;
+  }
+
+  .goal-line-wrap {
+    padding: 0.56rem 0.58rem 0.66rem;
+  }
+
+  .goal-line-title {
+    font-size: 0.67rem;
+  }
+
+  .goal-line-total {
+    font-size: 0.74rem;
+  }
+
+  .goal-line-checkpoint-row {
+    height: 1.8rem;
+  }
+
+  .goal-line-checkpoint-chip {
+    min-width: 2.35rem;
+    padding: 0.2rem 0.3rem;
+    font-size: 0.58rem;
+  }
+
+  .goal-line-percent {
+    font-size: 0.66rem;
+  }
+
+  .support-cta,
+  .support-deck-btn {
+    min-width: 94vw;
+  }
+}
+
+.sphere-loading {
+  height: min(72vw, 32rem);
+  border-radius: var(--radius-xl);
+  background: radial-gradient(circle at 35% 35%, rgb(255 255 255 / 85%), rgb(244 245 246 / 95%));
+  border: 1px solid var(--sob-border);
+}
+
+.support-cta-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.support-cta {
+  min-width: min(24rem, 92vw);
+  font-size: 0.95rem;
+  padding: 0.92rem 1.15rem;
+  border-radius: 999px;
+  animation: sphere-cta-in 0.35s ease both;
+}
+
+.support-cta-note {
+  margin: 0.3rem 0 0;
+  font-size: 0.74rem;
+  color: var(--sob-muted);
+}
+
+.support-deck-btn {
+  margin-top: 0.42rem;
+  min-width: min(24rem, 92vw);
+}
+
+.support-reveal-card {
+  margin-top: 0.5rem;
+  width: min(24rem, 92vw);
+  padding: 0.62rem 0.78rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgb(227 24 55 / 22%);
+  background: rgb(255 255 255 / 88%);
+  text-align: center;
+}
+
+.support-reveal-kicker {
+  margin: 0;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--sob-muted);
+}
+
+.support-reveal-name {
+  margin: 0.18rem 0 0;
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: var(--sob-red-dark);
+}
+
+.support-reveal-meta {
+  margin: 0.16rem 0 0;
+  font-size: 0.72rem;
+  color: var(--sob-text);
+}
+
+@keyframes sphere-cta-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

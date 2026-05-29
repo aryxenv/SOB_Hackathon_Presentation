@@ -1,0 +1,117 @@
+.event-card {
+  position: relative;
+  background: var(--sob-white);
+  border-radius: var(--radius-lg);
+  padding: 1.1rem 1.15rem;
+  border: 1.5px solid var(--sob-border);
+  box-shadow: var(--shadow-card);
+  transition:
+    transform 0.25s var(--ease-out-expo),
+    box-shadow 0.25s ease;
+  overflow: hidden;
+}
+
+.event-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lift);
+}
+
+.event-card.featured {
+  border-color: var(--sob-red-border);
+  box-shadow: var(--shadow-glow);
+}
+
+.event-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.55rem;
+}
+
+.event-status-pill {
+  font-size: 0.65rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  padding: 0.22rem 0.6rem;
+  border-radius: 999px;
+}
+
+.event-status-pill.status-current {
+  background: var(--sob-red);
+  color: var(--sob-white);
+}
+
+.event-status-pill.status-upcoming {
+  background: var(--sob-white);
+  color: var(--sob-red);
+  border: 1.5px solid var(--sob-red);
+}
+
+.event-status-pill.status-past {
+  background: var(--sob-red-soft);
+  color: var(--sob-muted);
+}
+
+.event-sport {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--sob-red);
+}
+
+.event-title {
+  margin: 0 0 0.45rem;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  letter-spacing: 0.02em;
+  color: var(--sob-red-dark);
+  line-height: 1.05;
+}
+
+.event-card.featured .event-title {
+  font-size: 1.55rem;
+}
+
+.event-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin: 0 0 0.7rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--sob-muted);
+}
+
+.event-location::before {
+  content: '◆ ';
+  font-size: 0.55rem;
+  color: var(--sob-red);
+}
+
+.event-desc {
+  margin: 0 0 0.9rem;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--sob-text);
+}
+
+.event-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--sob-red);
+  text-decoration: none;
+  transition: gap 0.2s var(--ease-spring), color 0.15s;
+}
+
+.event-link:hover {
+  gap: 0.45rem;
+  color: var(--sob-red-dark);
+}

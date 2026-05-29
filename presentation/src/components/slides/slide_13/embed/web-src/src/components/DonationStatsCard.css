@@ -1,0 +1,41 @@
+.donation-stats-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.45rem;
+  margin-bottom: 0.85rem;
+  padding: 0.75rem 0.9rem;
+  border: 1.5px solid var(--sob-border);
+  border-radius: var(--radius-md);
+  background: var(--sob-white);
+  box-shadow: var(--shadow-card);
+}
+
+.donation-stats-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+
+.donation-stats-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--sob-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.donation-stats-value {
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: var(--sob-red-dark);
+  text-align: right;
+}
+
+.donation-stats-note {
+  margin: 0.1rem 0 0.2rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--sob-muted);
+  line-height: 1.35;
+}

@@ -1,0 +1,148 @@
+.donation-sphere-card {
+  /* Break out of page padding so sphere can stay near viewport edges. */
+  margin: 0 calc(50% - 50vw + 0.35rem);
+  flex: 1;
+  min-height: 0;
+  display: flex;
+}
+
+.donation-sphere-canvas-wrap {
+  width: min(56rem, calc(100vw - 0.7rem));
+  aspect-ratio: 1 / 1;
+  height: 100%;
+  max-height: 100%;
+  margin-inline: auto;
+  border-radius: var(--radius-md);
+  background: radial-gradient(circle at 50% 35%, rgb(255 255 255 / 75%), rgb(241 230 233));
+  border: 1.5px solid rgb(227 24 55 / 22%);
+  overflow: hidden;
+}
+
+.donation-sphere-card:fullscreen .donation-sphere-canvas-wrap {
+  height: 100vh;
+  width: 100vw;
+  aspect-ratio: auto;
+  border-radius: 0;
+  border: none;
+}
+
+@media (max-width: 430px) {
+  .donation-sphere-card {
+    margin-inline: calc(50% - 50vw + 0.22rem);
+  }
+
+  .donation-sphere-canvas-wrap {
+    width: calc(100vw - 0.44rem);
+  }
+}
+
+.sphere-picked-athlete {
+  margin-top: 0.5rem;
+  padding: 0.58rem 0.72rem;
+  border: 1.5px solid var(--sob-border);
+  border-radius: var(--radius-md);
+  background: rgb(255 255 255 / 92%);
+}
+
+.sphere-picked-label {
+  margin: 0;
+  font-size: 0.64rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--sob-muted);
+}
+
+.sphere-picked-name {
+  margin: 0.22rem 0 0;
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--sob-red-dark);
+}
+
+.sphere-picked-team {
+  margin: 0.15rem 0 0;
+  font-size: 0.74rem;
+  color: var(--sob-text);
+}
+
+.sphere-picked-close {
+  margin-top: 0.52rem;
+  padding: 0.34rem 0.72rem;
+  border: 1px solid rgb(227 24 55 / 36%);
+  border-radius: 999px;
+  background: rgb(227 24 55 / 9%);
+  color: var(--sob-red-dark);
+  font-size: 0.7rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.donor-globe-label {
+  display: inline-block;
+  max-width: 5.5rem;
+  padding: 1px 4px;
+  border-radius: 999px;
+  font-family: var(--font-body);
+  font-size: 8px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  text-align: center;
+  pointer-events: none;
+  user-select: none;
+  box-shadow: var(--shadow-card);
+  opacity: 0;
+  transition: transform 0.2s var(--ease-out-expo);
+}
+
+.donor-globe-label.is-visible {
+  animation: donor-label-appear 0.4s var(--ease-out-expo) both;
+}
+
+.donor-globe-label.is-leaving {
+  animation: donor-label-leave 0.28s var(--ease-out-expo) forwards;
+}
+
+.donor-globe-label.is-other {
+  color: var(--sob-white);
+  background: var(--sob-red);
+  border: 1px solid var(--sob-red-border);
+}
+
+.donor-globe-label.is-mine {
+  color: var(--sob-white);
+  background: var(--sob-red-dark);
+  border: 1px solid var(--sob-red-border);
+  box-shadow: var(--shadow-glow);
+}
+
+.donor-globe-label.is-pulsing {
+  box-shadow:
+    0 0 0 1px var(--sob-red-border),
+    0 0 0 3px var(--sob-red-glow),
+    var(--shadow-lift);
+}
+
+@keyframes donor-label-appear {
+  from {
+    opacity: 0;
+    transform: scale(0.55) translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes donor-label-leave {
+  from {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.72) translateY(-5px);
+  }
+}

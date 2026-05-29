@@ -1,0 +1,24 @@
+id,event_id,player_id,sport,athlete_name,team,discipline_en,discipline_fr,discipline_nl,result_value,result_unit,rank,medal,status
+r001,national-games-2026,p001,athletics,Emma De Smet,Team Flanders,100m Sprint,100 m Sprint,100 m Sprint,14.82,s,1,gold,live
+r002,national-games-2026,,athletics,Marie Lambert,Team Wallonia,100m Sprint,100 m Sprint,100 m Sprint,15.04,s,2,silver,live
+r003,national-games-2026,,athletics,Jan Claes,Team Brussels,100m Sprint,100 m Sprint,100 m Sprint,15.31,s,3,bronze,live
+r004,national-games-2026,,athletics,Sara Van den Berg,Team Flanders,100m Sprint,100 m Sprint,100 m Sprint,15.48,s,4,none,live
+r005,national-games-2026,p002,swimming,Lucas Vermeulen,Blue Dolphins,50m Freestyle,50 m Nage libre,50 m Vrije slag,32.14,s,1,gold,live
+r006,national-games-2026,,swimming,Adam Wouters,Aqua Sharks,50m Freestyle,50 m Nage libre,50 m Vrije slag,32.89,s,2,silver,live
+r007,national-games-2026,,swimming,Lea Hendrickx,Wave Runners,50m Freestyle,50 m Nage libre,50 m Vrije slag,33.02,s,3,bronze,live
+r008,national-games-2026,,swimming,Clara Meunier,Blue Dolphins,50m Freestyle,50 m Nage libre,50 m Vrije slag,33.45,s,4,none,live
+r009,national-games-2026,p003,basketball,Sofia Janssens,Hoops United,3x3 Tournament,Tournoi 3x3,3x3 Toernooi,5,wins,1,gold,live
+r010,national-games-2026,,basketball,Max Dubois,Court Kings,3x3 Tournament,Tournoi 3x3,3x3 Toernooi,4,wins,2,silver,live
+r011,national-games-2026,,basketball,Anna Peeters,Hoops East,3x3 Tournament,Tournoi 3x3,3x3 Toernooi,3,wins,3,bronze,live
+r012,national-games-2026,p004,football,Noah Peeters,Red Lions East,Top Scorers,Meilleurs buteurs,Topscorers,4,goals,1,gold,live
+r013,national-games-2026,p010,football,Mohamed El Amrani,United FC Brussels,Top Scorers,Meilleurs buteurs,Topscorers,3,goals,2,silver,live
+r014,national-games-2026,,football,Pieter Janssens,Green Valley,Top Scorers,Meilleurs buteurs,Topscorers,2,goals,3,bronze,live
+r015,national-games-2026,p005,gymnastics,Chloé Dubois,Stars Liège,Floor Exercise,Exercice au sol,Vloeroefening,8.72,pts,1,gold,live
+r016,national-games-2026,,gymnastics,Emma Wouters,Flex Team,Floor Exercise,Exercice au sol,Vloeroefening,8.45,pts,2,silver,live
+r017,national-games-2026,,gymnastics,Lisa Maes,Stars Antwerp,Floor Exercise,Exercice au sol,Vloeroefening,8.31,pts,3,bronze,live
+r018,national-games-2026,p011,bocce,Isabelle Laurent,Roll & Win,Bocce Singles,Bocce en simple,Bocce enkel,12,pts,1,gold,live
+r019,national-games-2026,,bocce,François Martin,Bocce Club Namur,Bocce Singles,Bocce en simple,Bocce enkel,10,pts,2,silver,live
+r020,national-games-2026,,bocce,Helena Claes,Roll Flanders,Bocce Singles,Bocce en simple,Bocce enkel,9,pts,3,bronze,live
+r021,basketball-tournament-2025,,basketball,Tim Verstraeten,Antwerp Aces,5x5 Final,Finale 5x5,5x5 Finale,78,pts,1,gold,final
+r022,basketball-tournament-2025,,basketball,Julie Hendrix,Brussels Ballers,5x5 Final,Finale 5x5,5x5 Finale,71,pts,2,silver,final
+r023,basketball-tournament-2025,,basketball,Kevin De Vos,Liège Hoops,5x5 Final,Finale 5x5,5x5 Finale,65,pts,3,bronze,final

@@ -1,0 +1,81 @@
+.donate-vote-banner {
+  position: relative;
+  display: flex;
+  gap: 0.5rem;
+  padding: 1.15rem 1.1rem 1.15rem 1.2rem;
+  margin-bottom: 1.15rem;
+  border-radius: var(--radius-lg);
+  background: var(--sob-red);
+  color: var(--sob-white);
+  box-shadow: var(--shadow-glow);
+  overflow: hidden;
+}
+
+.donate-vote-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    -18deg,
+    transparent,
+    transparent 14px,
+    rgb(255 255 255 / 5%) 14px,
+    rgb(255 255 255 / 5%) 28px
+  );
+  pointer-events: none;
+}
+
+.donate-vote-banner > * {
+  position: relative;
+  z-index: 1;
+}
+
+.banner-eyebrow {
+  margin: 0 0 0.3rem;
+  font-size: 0.65rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.88;
+}
+
+.banner-text {
+  margin: 0 0 0.85rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.donate-vote-banner .banner-cta.btn-primary {
+  width: 100%;
+  background: var(--sob-white);
+  color: var(--sob-red);
+  box-shadow: 0 4px 16px rgb(0 0 0 / 15%);
+}
+
+.donate-vote-banner .banner-cta.btn-primary:hover:not(:disabled) {
+  background: var(--sob-red-dark);
+  color: var(--sob-white);
+}
+
+.banner-close {
+  position: absolute;
+  top: 0.45rem;
+  right: 0.55rem;
+  z-index: 2;
+  width: 1.75rem;
+  height: 1.75rem;
+  border: none;
+  border-radius: 50%;
+  background: rgb(255 255 255 / 18%);
+  color: var(--sob-white);
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.2s var(--ease-spring);
+}
+
+.banner-close:hover {
+  background: rgb(255 255 255 / 32%);
+  transform: scale(1.08);
+}

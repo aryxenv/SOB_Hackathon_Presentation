@@ -1,0 +1,70 @@
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.form-field span,
+.form-field legend {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--sob-muted);
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  padding: 0.65rem 0.75rem;
+  border: 2px solid var(--sob-border);
+  border-radius: var(--radius-md);
+  font-size: 0.95rem;
+  font-family: inherit;
+  color: var(--sob-red-dark);
+  background: var(--sob-white);
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: var(--sob-red);
+}
+
+.form-field input.field-error,
+.form-field select.field-error,
+.form-field textarea.field-error {
+  border-color: var(--sob-red);
+  background: var(--sob-red-soft);
+}
+
+.form-error {
+  margin: -0.35rem 0 0.65rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--sob-red);
+}
+
+.form-section-title {
+  margin: 0.25rem 0 0.65rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--sob-muted);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+@media (max-width: 400px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
