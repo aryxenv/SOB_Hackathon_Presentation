@@ -9,9 +9,17 @@ Instead of a PowerPoint, this is a **web-based presentation**: every slide is it
 
 ## Getting started
 
+This is a custom **web-based presentation**, these are the basic controls:
+
+- **← / →** — previous / next slide
+- **Spacebar** — trigger in-slide animations
+
+> [!TIP]
+> Press **spacebar** on every slide — some have hidden animations you might not expect. Not all slides support it.
+
 ### Online
 
-🔗 Live presentation: _coming soon_ (placeholder)
+https://aryxenv.github.io/SOB_Hackathon_Presentation/
 
 ### Run locally
 
@@ -32,14 +40,6 @@ Instead of a PowerPoint, this is a **web-based presentation**: every slide is it
    ```
 
    Open http://localhost:5173
-
-## Controls
-
-- **← / →** — previous / next slide
-- **Spacebar** — trigger in-slide animations
-
-> [!TIP]
-> Press **spacebar** on every slide — some have hidden animations you might not expect. Not all slides support it.
 
 ## Team
 
